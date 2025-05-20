@@ -24,8 +24,8 @@ This folder contains my Java exercises from Workbook 6.
   - Using interfaces to unify behavior between unrelated classes
   - Updating existing designs to support new requirements
 
-### ✅ Portfolio Exercise
-- Implemented all Java classes from the Asset Portfolio UML diagram except the `Portfolio` class
+### ✅ Portfolio Exercise (Exercise 1)
+- Implemented all Java classes from the Asset Portfolio UML diagram, except the `Portfolio` class
 - Created a `com.pluralsight.finance` package for:
   - `BankAccount`, `CreditCard`, and fixed asset classes (`House`, `Gold`, `Jewelry`)
   - Abstract class `FixedAsset` and interface `Valuable`
@@ -34,7 +34,22 @@ This folder contains my Java exercises from Workbook 6.
 - Practiced:
   - Calling methods based on declared type vs actual object type
   - Understanding why `account2.deposit(100)` doesn't compile when declared as `Valuable`
-- Learned how to separate fixed assets from liquid assets in code using interfaces
+  - Separating fixed assets from liquid assets in code using interfaces
+
+#### 🔁 Continued in Exercise 3: Portfolio Class Logic & User Interaction
+- Added the `Portfolio` class with:
+  - A `List<Valuable>` to track all assets
+  - `add()` method to add new assets
+  - `getValue()` to calculate the portfolio's total net worth
+  - `getMostValuable()` and `getLeastValuable()` to find top and bottom assets by value
+- Updated `FinanceApplication` with interactive console input:
+  - User is prompted to add new assets (BankAccount, CreditCard, or House)
+  - Program gathers all required fields and adds the asset to the portfolio
+  - After exiting, the program prints a summary of total value, most valuable, and least valuable items
+- Great practice for:
+  - Using polymorphism with interface-based design
+  - Writing logic to compare and evaluate object values
+  - Building interactive console applications with user input
 
 ### ✅ WorkingWithInterfaces
 - Demonstrates how to use the `Comparable` interface to sort custom objects
@@ -62,4 +77,8 @@ This folder contains my Java exercises from Workbook 6.
 - How to use `Collections.sort()` with custom objects  
 - How to compare multiple properties when sorting (name, age, etc.)  
 - Differences between `ArrayList` and `LinkedList` and when to use each  
+- How to find max and min from a list of objects  
+- How to build simple console interfaces to accept user input and store data
+
+
 
