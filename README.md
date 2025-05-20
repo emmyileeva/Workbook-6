@@ -24,6 +24,18 @@ This folder contains my Java exercises from Workbook 6.
   - Using interfaces to unify behavior between unrelated classes
   - Updating existing designs to support new requirements
 
+### ✅ Portfolio Exercise
+- Implemented all Java classes from the Asset Portfolio UML diagram except the `Portfolio` class
+- Created a `com.pluralsight.finance` package for:
+  - `BankAccount`, `CreditCard`, and fixed asset classes (`House`, `Gold`, `Jewelry`)
+  - Abstract class `FixedAsset` and interface `Valuable`
+- Implemented the `getValue()` method for all `Valuable` types
+- Created a `FinanceApplication` class to test interactions between classes
+- Practiced:
+  - Calling methods based on declared type vs actual object type
+  - Understanding why `account2.deposit(100)` doesn't compile when declared as `Valuable`
+- Learned how to separate fixed assets from liquid assets in code using interfaces
+
 ### ✅ WorkingWithInterfaces
 - Demonstrates how to use the `Comparable` interface to sort custom objects
 - Defines a `Person` class with three fields:
@@ -50,5 +62,4 @@ This folder contains my Java exercises from Workbook 6.
 - How to use `Collections.sort()` with custom objects  
 - How to compare multiple properties when sorting (name, age, etc.)  
 - Differences between `ArrayList` and `LinkedList` and when to use each  
-
 
