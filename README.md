@@ -6,6 +6,24 @@ This folder contains my Java exercises from Workbook 6.
 
 ## 📘 Exercises Included
 
+### ✅ AssetPortfolio UML Diagram
+- Designed a UML class diagram for an Asset Portfolio application
+- Defined abstract class `FixedAsset` with subclasses:
+  - `Jewelry`, `Gold`, and `House`
+- Added a new interface `Valuable` to represent items with a value
+- Created new classes `BankAccount` and `CreditCard` to represent liquid assets and debt
+  - `BankAccount` includes `deposit()` and `withdraw()` methods
+  - `CreditCard` includes `charge()` and `pay()` methods
+- Updated the `Portfolio` class to hold a list of `Valuable` items instead of only `FixedAsset`
+- Practiced distinguishing between:
+  - Fixed assets (less likely to change in value)
+  - Liquid accounts (change frequently and should not extend `FixedAsset`)
+- Exported the final diagram to the `assets-diagrams` folder as instructed
+- Great practice for:
+  - Visualizing class relationships and responsibilities
+  - Using interfaces to unify behavior between unrelated classes
+  - Updating existing designs to support new requirements
+
 ### ✅ WorkingWithInterfaces
 - Demonstrates how to use the `Comparable` interface to sort custom objects
 - Defines a `Person` class with three fields:
@@ -25,9 +43,12 @@ This folder contains my Java exercises from Workbook 6.
 ---
 
 ## ✨ What I Learned
-- How to use the `Comparable` interface in a custom class  
-- How to define sorting rules inside the `compareTo()` method  
-- How to use `Collections.sort()` with objects  
-- How to compare strings and integers in Java  
-- When to use `ArrayList` vs `LinkedList` based on speed and behavior  
-- How to design clean sorting logic based on multiple conditions  
+- How to design class diagrams using UML to map out class relationships  
+- How to refactor a system to support both fixed and liquid assets  
+- How to use interfaces like `Valuable` and `Comparable` to enforce behaviors  
+- How to implement the `compareTo()` method for custom sorting  
+- How to use `Collections.sort()` with custom objects  
+- How to compare multiple properties when sorting (name, age, etc.)  
+- Differences between `ArrayList` and `LinkedList` and when to use each  
+
+
