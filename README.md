@@ -83,6 +83,21 @@ This folder contains my Java exercises from Workbook 6.
   - Enforcing class invariants (max size)
   - Understanding type safety and compile-time checking with generics
 
+### ✅ Streams – Person Search App (Exercise 1)
+- Created a `Person` class with `firstName`, `lastName`, and `age` fields
+- Built a basic console application in `Program.java` to:
+  - Prompt the user to enter a name (first or last)
+  - Search a list of 10+ people using traditional `for` loops
+  - Print out matches with their full name and age
+- Calculated key statistics using loops:
+  - Average age of all people
+  - Oldest age in the list
+  - Youngest age in the list
+- Great practice for:
+  - Using `for` loops to filter and process data
+  - Gathering user input and performing string comparisons
+  - Manually calculating min, max, and average values before using streams
+
 ---
 
 ## ✨ What I Learned
