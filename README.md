@@ -67,6 +67,22 @@ This folder contains my Java exercises from Workbook 6.
   - Using `compareTo()` to control sort behavior
   - Understanding the difference between `ArrayList` and `LinkedList`
 
+### ✅ CustomCollections – FixedList<T> (Exercise 1)
+- Created a generic class `FixedList<T>` to mimic a fixed-size version of `ArrayList`
+- Constructor takes a `maxSize` parameter that limits how many items can be added
+- Implemented an `add(T item)` method that:
+  - Adds an item only if the list hasn't reached the maximum size
+  - Prints a warning if the list is full
+- Implemented `getItems()` method to return the internal list of items
+- Tested with multiple types in `main()`:
+  - `FixedList<Integer>` and added numbers
+  - `FixedList<LocalDate>` and added dates
+  - Verified type safety by attempting to add wrong types (resulting in compile-time errors)
+- Great practice for:
+  - Writing generic classes using `<T>`
+  - Enforcing class invariants (max size)
+  - Understanding type safety and compile-time checking with generics
+
 ---
 
 ## ✨ What I Learned
@@ -79,6 +95,7 @@ This folder contains my Java exercises from Workbook 6.
 - Differences between `ArrayList` and `LinkedList` and when to use each  
 - How to find max and min from a list of objects  
 - How to build simple console interfaces to accept user input and store data
+
 
 
 
