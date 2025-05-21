@@ -98,6 +98,18 @@ This folder contains my Java exercises from Workbook 6.
   - Gathering user input and performing string comparisons
   - Manually calculating min, max, and average values before using streams
 
+### ✅ StreamsPart2 – Search & Stats with Streams (Exercise 2)
+- Copied the original `Streams` project and renamed it to `StreamsPart2`
+- Replaced `for` loop logic with Java Stream methods:
+  - Used `filter()` to search for matching first or last names
+  - Used `map()` and `reduce()` to calculate total and average age
+  - Used `reduce()` to find the oldest and youngest person in the list
+- Trimmed and lowercased user input to avoid whitespace or casing issues
+- Great practice for:
+  - Working with stream pipelines and lambda expressions
+  - Replacing imperative code with declarative stream logic
+  - Using `reduce()` to manually calculate min, max, and totals
+
 ---
 
 ## ✨ What I Learned
